@@ -1,20 +1,34 @@
-Conceito
-O Perceptron é um modelo de neurônio artificial criado por Frank Rosenblatt em 1958.
-Recebe entradas, multiplica por pesos, soma e aplica uma função de ativação para gerar saída.
-Importância histórica: foi o primeiro modelo de rede neural artificial, marcando o início do aprendizado de máquina e da Inteligência Artificial moderna.
-Funcionamento,
-É um classificador linear, ou seja, separa classes usando uma reta, plano ou hiperplano.
-Limitação: não consegue resolver problemas não linearmente separáveis, como o XOR.
-Código (etapas do treinamento),
-Inicialização dos pesos e bias.
-Cálculo da saída (soma ponderada + ativação).
-Comparação com a saída esperada (erro).
-Ajuste dos pesos e bias com base no erro.
-Repetição até atingir número de épocas ou erro mínimo.
-Aplicaçao prática,
-Exemplo: filtro de spam simples em e-mails.
-Justificativa: separa mensagens em spam e não spam com base em palavras-chave, sendo rápido e eficiente para problemas linearmente separáveis.
+1. Conceito
 
+O Perceptron é um modelo de rede neural artificial criado na década de 1950 por Frank Rosenblatt. Ele foi o primeiro algoritmo capaz de aprender a partir de dados de forma supervisionada. Em termos simples, é como uma “unidade de decisão” que recebe entradas (valores), multiplica cada uma por um peso, soma tudo, aplica uma função de ativação e decide se a saída será 0 ou 1.
+Sua importância histórica é enorme porque foi a base inicial para o desenvolvimento das redes neurais e abriu caminho para a Inteligência Artificial moderna, mesmo que tivesse limitações.
+
+2. Funcionamento
+
+O Perceptron é chamado de classificador linear porque ele só consegue separar os dados em duas classes usando uma linha (no caso de duas dimensões), ou um hiperplano (em dimensões maiores).
+Isso significa que ele só funciona bem quando os dados são linearmente separáveis.
+Por exemplo: se eu quiser separar pontos vermelhos de pontos azuis em um gráfico, e existe uma linha reta que divide bem os dois grupos, o Perceptron consegue resolver.
+A limitação é que ele não consegue lidar com problemas mais complexos, como o clássico caso do XOR, em que os dados não podem ser separados por uma linha reta.
+
+3. Código
+
+Ao analisar o código de treinamento do Perceptron, as principais etapas são:
+
+Inicialização dos pesos e do bias (geralmente valores pequenos ou zerados).
+
+Entrada dos dados de treino (features e rótulos esperados).
+
+Cálculo da saída predita multiplicando entradas × pesos + bias.
+
+Função de ativação para decidir a classe (0 ou 1).
+
+Atualização dos pesos com base no erro (diferença entre predição e valor real). Isso é feito até o modelo aprender a separar corretamente os dados ou até atingir um número máximo de épocas.
+
+4. Aplicação prática
+
+Um exemplo real seria o filtro de spam em e-mails.
+O Perceptron pode ser usado para classificar se um e-mail é “spam” ou “não spam” com base em palavras-chave, frequência de termos e outras características simples.
+A justificativa é que, mesmo sendo um modelo básico, ele pode aprender padrões lineares claros (por exemplo, presença de “promoção”, “clique aqui”, “grátis”) e já oferecer uma solução eficiente sem precisar de modelos complexos.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 (README)
