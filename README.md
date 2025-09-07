@@ -29,6 +29,8 @@ Atualização dos pesos com base no erro (diferença entre predição e valor re
 Um exemplo real seria o filtro de spam em e-mails.
 O Perceptron pode ser usado para classificar se um e-mail é “spam” ou “não spam” com base em palavras-chave, frequência de termos e outras características simples.
 A justificativa é que, mesmo sendo um modelo básico, ele pode aprender padrões lineares claros (por exemplo, presença de “promoção”, “clique aqui”, “grátis”) e já oferecer uma solução eficiente sem precisar de modelos complexos.
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 (README)
